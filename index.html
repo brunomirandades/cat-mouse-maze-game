@@ -3,25 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Mouse Cheese Maze Game</title>
+    <title>🐱 Cat vs 🐭 Mouse Maze</title>
+    <!-- <meta http-equiv="Content-Security-Policy"
+            content="
+                default-src 'self';
+                img-src 'self' data:;
+                script-src 'self';
+                style-src 'self';
+            "> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🐱🐭🧀 Cat Mouse Cheese Maze Game</h1>
+    <h1 id="gameTitle">🐱 Cat vs 🐭 Mouse Maze</h1>
+
+    <!-- Game Canvas -->
     <div>
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <canvas id="gameCanvas" width="800" height="600" aria-label="Game Canvas">
+            Your browser does not support HTML5 Canvas.
+        </canvas>
     </div>
-    <div>
+
+    <!-- Controls -->
+    <div class="controls" aria-label="Game Controls">
         <button id="startBtn" type="button">Start</button>
         <button id="stopBtn" type="button">Stop</button>
         <button id="resetBtn" type="button">Reset</button>
     </div>
-    <script src="/js/main.js"></script>
-    <script src="/js/game.js"></script>
-    <script src="/js/utils.js"></script>
-    <script src="/js/maze.js"></script>
-    <script src="/js/pathfinding.js"></script>
-    <script src="/js/cheese.js"></script>
-    <script src="/js/player.js"></script>
-    <script src="/js/ui.js"></script>
+
+    <!-- Main game entry -->
+    <!-- <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/cheese.js"></script>
+    <script type="module" src="./js/game.js"></script>
+    <script type="module" src="./js/maze.js"></script>
+    <script type="module" src="./js/pathfinding.js"></script>
+    <script type="module" src="./js/player.js"></script>
+    <script type="module" src="./js/ui.js"></script>
+    <script type="module" src="./js/utils.js"></script> -->
+    <script src="./js/cheese.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/maze.js"></script>
+    <script src="./js/pathfinding.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
