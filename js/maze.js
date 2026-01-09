@@ -154,12 +154,15 @@ export class Maze {
         const centerRow = Math.floor(this.rows / 2);
         const centerCol = Math.floor(this.cols / 2);
 
-        const cell = this.grid[centerRow][centerCol];
-
+        for (let r = centerRow - 1; r <= centerRow + 1; r++) {
+            for (let c = centerCol - 1; c <= centerCol + 1; c++) {
+                const cell = this.grid[r][c];
         cell.walls.top = false;
         cell.walls.bottom = false;
         cell.walls.left = false;
         cell.walls.right = false;
+            }
+        }
     }
 
     /**
